@@ -1,16 +1,21 @@
+PROJECT=in-groups-of
 
-build: components index.js
-	@component build --dev
+check: test
 
-components:
-	@component install --dev
+compile: build/buid.js
+
+build:
+	@mkdir -p $@
+
+build/buid.js: build index.js
+	@browserify --require ./index.js:$(PROJECT) --outfile $@
 
 clean:
-	rm -fr build components template.js
+	rm -fr build
 
 test:
 	@./node_modules/.bin/mocha \
 		--require should \
 		--reporter spec
 
-.PHONY: clean test
+.PHONY: clean test check compile

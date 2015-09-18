@@ -1,6 +1,5 @@
 {
-  "name": "in-groups-of",
-  "repo": "component/in-groups-of",
+  "name": "code42day-in-groups-of",
   "description": "Return an array of arrays in groups of N",
   "version": "1.0.0",
   "keywords": [],
@@ -9,13 +8,9 @@
     "mocha": "*",
     "should": "*"
   },
-  "component": {
-    "scripts": {
-      "in-groups-of/index.js": "index.js"
-    }
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/component/in-groups-of.git"
-  }
+    "url": "https://github.com/code42day/in-groups-of.git"
+  },
+  "license": "MIT"
 }
