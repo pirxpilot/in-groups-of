@@ -1,19 +1,14 @@
 
 module.exports = function(arr, n){
-  var ret = [];
-  var group = [];
-  var len = arr.length;
-  var per = len * (n / len);
+  var i, ret = [];
 
-  for (var i = 0; i < len; ++i) {
-    group.push(arr[i]);
-    if ((i + 1) % n == 0) {
-      ret.push(group);
-      group = [];
-    }
+  if (n < 1) {
+    return arr;
   }
 
-  if (group.length) ret.push(group);
+  for (i = 0; i < arr.length; i += n) {
+    ret.push(arr.slice(i, i + n));
+  }
 
   return ret;
 };

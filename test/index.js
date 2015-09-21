@@ -13,6 +13,12 @@ describe('inGroupsOf(arr, n)', function(){
     inGroupsOf(nums, 2)
       .should.eql([[1,2], [3,4], [5,6], [7,8], [9,10]]);
 
+    inGroupsOf(nums, 1)
+      .should.eql([[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]]);
+
+    inGroupsOf(nums, 0)
+      .should.eql([1,2,3,4,5,6,7,8,9,10]);
+
     inGroupsOf([], 1).should.eql([]);
     inGroupsOf([], 5).should.eql([]);
     inGroupsOf([], 5).should.eql([]);
