@@ -6,7 +6,7 @@
 ## Installation
 
 ```
-$ component install component/in-groups-of
+$ npm install @pirxpilot/in-groups-of
 ```
 
 ## Example
