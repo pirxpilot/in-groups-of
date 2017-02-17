@@ -1,7 +1,7 @@
 {
   "name": "@pirxpilot/in-groups-of",
   "description": "Return an array of arrays in groups of N",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [],
   "dependencies": {},
   "devDependencies": {
