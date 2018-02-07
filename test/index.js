@@ -22,5 +22,5 @@ describe('inGroupsOf(arr, n)', function(){
     inGroupsOf([], 1).should.eql([]);
     inGroupsOf([], 5).should.eql([]);
     inGroupsOf([], 5).should.eql([]);
-  })
-})
+  });
+});
