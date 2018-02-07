@@ -1,4 +1,10 @@
 
+1.1.2 / 2018-02-07
+==================
+
+ * replace .npmignore with package.files
+ * fix lint issues
+
 1.1.1 / 2017-02-17
 ==================
 
