@@ -1,4 +1,10 @@
 
+1.1.3 / 2025-04-06
+==================
+
+ * calculate the end of the split only once per iteration
+ * use built-in `node:test` instead of `mocha`
+
 1.1.2 / 2018-02-07
 ==================
 
