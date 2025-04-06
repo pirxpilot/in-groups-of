@@ -1,13 +1,15 @@
-
-module.exports = function(arr, n){
-  var i, ret = [];
-
+module.exports = function (arr, n) {
   if (n < 1) {
     return arr;
   }
 
-  for (i = 0; i < arr.length; i += n) {
-    ret.push(arr.slice(i, i + n));
+  var ret = [];
+  var i = 0;
+  var j;
+  while (i < arr.length) {
+    j = i + n;
+    ret.push(arr.slice(i, j));
+    i = j;
   }
 
   return ret;
